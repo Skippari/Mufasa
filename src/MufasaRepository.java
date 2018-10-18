@@ -16,7 +16,7 @@ class MufasaRepository {
     private static MufasaRepository instance = null;
    
     private MufasaRepository(){
-        accounts = new Vector<>(3,1);
+        accounts = new Vector<>(5,1);
     }
     
     public void addMufasa( Mufasa account ){

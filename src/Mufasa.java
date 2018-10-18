@@ -20,10 +20,13 @@ public class Mufasa implements Serializable {
         this.money = money_par;
         this.accountID = this.hashCode( );
         
-        System.out.println("Created new account for: " + firstName + " " + lastName + " Username:" + username + " with amount of:" + money);
-    }
+        System.out.println("");
+        System.out.println("Created new account: FI" + accountID );//change the FI to real country code later
+        System.out.println("Owner: " + firstName + " " + lastName );
+        System.out.println("Username: " + username );
+        System.out.println("Initial investment: " + money +" Euros");
     
-
+    }
     
     public void setFirstName( final String firstName_par){
         this.firstName = firstName_par;
@@ -66,6 +69,6 @@ public class Mufasa implements Serializable {
     }
    
    public String toString(){
-      return "Account Code: " + accountID + " Account owner: " + this.firstName + " " + this.lastName + " Username: " + this.username + " amount of money in the account: " + this.money + " Euros";
+      return "Account Number: " + accountID + " Account owner: " + this.firstName + " " + this.lastName + " Username: " + this.username + " amount of money in the account: " + this.money + " Euros";
    }
 }
