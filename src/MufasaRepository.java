@@ -19,8 +19,8 @@ class MufasaRepository {
         accounts = new Vector<>(3,1);
     }
     
-    public void addMufasa( Mufasa prod ){
-        accounts.addElement( prod );
+    public void addMufasa( Mufasa account ){
+        accounts.addElement( account );
     }
     
     public Mufasa removeLast(){
